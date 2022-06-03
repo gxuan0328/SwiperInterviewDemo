@@ -36,6 +36,13 @@ namespace CommunityCenter.Controllers
             
             try
             {
+                if (!ModelState.IsValid)
+                {
+                    result.StatusCode = Error.Code.BAD_REQUEST;
+                    result.Message = Error.Message[Error.Code.BAD_REQUEST];
+                    return result;
+                }
+
 
             }
             catch (Exception e)
@@ -63,6 +70,13 @@ namespace CommunityCenter.Controllers
 
             try
             {
+                if (!ModelState.IsValid)
+                {
+                    result.StatusCode = Error.Code.BAD_REQUEST;
+                    result.Message = Error.Message[Error.Code.BAD_REQUEST];
+                    return result;
+                }
+
 
             }
             catch (Exception e)
@@ -90,6 +104,13 @@ namespace CommunityCenter.Controllers
 
             try
             {
+                if (!ModelState.IsValid)
+                {
+                    result.StatusCode = Error.Code.BAD_REQUEST;
+                    result.Message = Error.Message[Error.Code.BAD_REQUEST];
+                    return result;
+                }
+
 
             }
             catch (Exception e)
