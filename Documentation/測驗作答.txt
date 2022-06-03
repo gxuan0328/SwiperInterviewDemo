@@ -1,0 +1,15 @@
+第一題
+1. 資料表設計: https://github.com/gxuan0328/SwiperInterviewDemo/blob/master/Documentation/DB_Diagram.png
+2. 資料庫結構語法檔: https://github.com/gxuan0328/SwiperInterviewDemo/blob/master/Documentation/Database_Structure.sql
+3. 指定取得資料語法檔(取得貼⽂留⾔最多的 10 筆貼⽂): https://github.com/gxuan0328/SwiperInterviewDemo/blob/master/Documentation/Require_Data.sql
+
+第二題
+1. API設計文件: https://github.com/gxuan0328/SwiperInterviewDemo/blob/master/Documentation/CommunityCenter_API_Document.pdf
+2. GitHub連結: https://github.com/gxuan0328/SwiperInterviewDemo
+
+第三題
+應用程式反應過慢，解決步驟:
+1. 確認慢的源頭來自於哪個階段: 傳輸過程、後端伺服器、資料庫查詢過程
+2.1 若為傳輸過程問題，可先檢測網路頻寬與DNS解析是否正常，再確認payload大小是否合理
+2.2 若為後端伺服器問題， 應針對資源使用後是否正確釋放進行檢查，並確認是否曾到DDOS攻擊導致服務癱瘓，可透過限制IP請求短時間內請求數量、加入cache機制，增加伺服器服務效能
+2.3 若為資料庫查詢耗時過程，可透過該查詢的執行計畫，針對問題點進行語法效能優化，如建立index、處理子查詢語句、拆分過大的Transaction，降低所表範圍
