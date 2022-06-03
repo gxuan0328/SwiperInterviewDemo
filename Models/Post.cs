@@ -7,8 +7,6 @@ namespace CommunityCenter.Models
         [Required]
         public string Content { get; set; }
         [Required]
-        public int User_Id { get; set; }
-        [Required]
         public int PrivacyType_Id { get; set; }
     }
     public class PutPostDto
@@ -18,15 +16,11 @@ namespace CommunityCenter.Models
         [Required]
         public string Content { get; set; }
         [Required]
-        public int User_Id { get; set; }
-        [Required]
         public int PrivacyType_Id { get; set; }
     }
     public class DeletePostDto
     {
         [Required]
         public int Id { get; set; }
-        [Required]
-        public int User_Id { get; set; }
     }
 }
